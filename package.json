@@ -1,0 +1,19 @@
+{
+  "name": "flaby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Bek020/Flaby.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bek020/Flaby/issues"
+  },
+  "homepage": "https://github.com/Bek020/Flaby#readme"
+}
