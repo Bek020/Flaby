@@ -17,4 +17,254 @@ html, body {
   max-width: 1600px;
 }
 
+.navbar {
+  text-align: center;
+}
+.navbar-nav {
+  position: relative;
+  margin-left: auto;
+  text-align: center;
+  z-index: 2;
+}
+.navbar-nav-item {
+  margin: 20px 30px;
+}
+.navbar-nav-link {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  text-decoration: none;
+  font-weight: bold;
+  color: var(--text-color);
+}
+.navbar-logo {
+  position: relative;
+  z-index: 2;
+}
+.navbar-btn {
+  font-family: "Raleway", sans-serif;
+  padding: 14px 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: var(--text-color);
+  border-radius: 5px;
+  border: none;
+  background: #4ca3e6ef;
+}
+
+.header {
+  position: relative;
+  background: url(../img/header/bg.png) no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+.header-line {
+  position: relative;
+  background: var(--text-color);
+  z-index: 2;
+}
+.header-content {
+  position: relative;
+  font-family: "Raleway", sans-serif;
+  padding: 265px 0 210px 0;
+  z-index: 2;
+}
+.header-title {
+  font-family: "Roboto Slab", serif;
+  text-transform: uppercase;
+  font-size: 40px;
+  color: var(--text-color);
+}
+.header-desc {
+  max-width: 500px;
+  font-size: 26px;
+  color: var(--text-color);
+}
+.header-btn {
+  position: relative;
+  margin-top: 50px;
+  z-index: 2;
+}
+@media screen and (min-width: 480px) {
+  .header-btn-wrap {
+    display: flex;
+  }
+}
+.header-btn-store {
+  display: flex;
+  padding: 15px;
+  border-radius: 8px;
+  background: #fff;
+  border: none;
+}
+.header-btn-store-text {
+  margin: 0;
+  padding-left: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  color: black;
+}
+.header-btn-normal {
+  padding: 15px 44px;
+  border-radius: 8px;
+  background: #4ca3e6ef;
+  border: none;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--text-color);
+}
+@media screen and (min-width: 480px) {
+  .header-btn-normal {
+    margin: 50px 0 0 10px;
+  }
+}
+.header-phone {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .header-phone {
+    display: block;
+    position: absolute;
+    top: -738px;
+    right: 0;
+    width: 420px;
+    z-index: 2;
+  }
+}
+.header-phone-wrap {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .header-phone-wrap {
+    display: block;
+    position: relative;
+  }
+}
+.header-display {
+  display: none;
+}
+@media screen and (min-width: 992px) {
+  .header-display {
+    display: block;
+    position: absolute;
+    top: -637px;
+    right: 31px;
+    width: 358px;
+    z-index: 2;
+  }
+}
+.header-pencil {
+  position: absolute;
+  top: 661px;
+  left: 0;
+  z-index: 1;
+}
+.header-earphone {
+  position: absolute;
+  top: 423px;
+  right: 0;
+  z-index: 1;
+}
+.header-headphones {
+  position: absolute;
+  top: -30px;
+  left: -400px;
+  z-index: 1;
+}
+
+/*!
+ * Hamburgers
+ * @description Tasty CSS-animated hamburgers
+ * @author Jonathan Suh @jonsuh
+ * @site https://jonsuh.com/hamburgers
+ * @link https://github.com/jonsuh/hamburgers
+ */
+.hamburger {
+  padding: 15px 15px;
+  display: inline-block;
+  cursor: pointer;
+  transition-property: opacity, filter;
+  transition-duration: 0.15s;
+  transition-timing-function: linear;
+  font: inherit;
+  color: inherit;
+  text-transform: none;
+  background-color: transparent;
+  border: 0;
+  margin: 0;
+  overflow: visible;
+}
+.hamburger:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active:hover {
+  opacity: 0.7;
+}
+.hamburger.is-active .hamburger-inner,
+.hamburger.is-active .hamburger-inner::before,
+.hamburger.is-active .hamburger-inner::after {
+  background-color: #ffffff;
+}
+
+.hamburger-box {
+  width: 40px;
+  height: 24px;
+  display: inline-block;
+  position: relative;
+}
+
+.hamburger-inner {
+  display: block;
+  top: 50%;
+  margin-top: -2px;
+}
+.hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: #ffffff;
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+.hamburger-inner::before, .hamburger-inner::after {
+  content: "";
+  display: block;
+}
+.hamburger-inner::before {
+  top: -10px;
+}
+.hamburger-inner::after {
+  bottom: -10px;
+}
+
+/*
+ * Squeeze
+ */
+.hamburger--squeeze .hamburger-inner {
+  transition-duration: 0.075s;
+  transition-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze .hamburger-inner::before {
+  transition: top 0.075s 0.12s ease, opacity 0.075s ease;
+}
+.hamburger--squeeze .hamburger-inner::after {
+  transition: bottom 0.075s 0.12s ease, transform 0.075s cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+.hamburger--squeeze.is-active .hamburger-inner {
+  transform: rotate(45deg);
+  transition-delay: 0.12s;
+  transition-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+.hamburger--squeeze.is-active .hamburger-inner::before {
+  top: 0;
+  opacity: 0;
+  transition: top 0.075s ease, opacity 0.075s 0.12s ease;
+}
+.hamburger--squeeze.is-active .hamburger-inner::after {
+  bottom: 0;
+  transform: rotate(-90deg);
+  transition: bottom 0.075s ease, transform 0.075s 0.12s cubic-bezier(0.215, 0.61, 0.355, 1);
+}
+
 /*# sourceMappingURL=main.css.map */

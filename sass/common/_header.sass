@@ -1,0 +1,139 @@
+.navbar
+  text-align: center
+  
+  &-nav
+    position: relative
+    margin-left: auto
+    text-align: center
+    z-index: 2
+
+    &-item
+      margin: 20px 30px
+
+    &-link
+      font-family: 'Raleway', sans-serif
+      text-transform: uppercase
+      text-decoration: none
+      font-weight: bold
+      color: $textColor
+
+  &-logo
+    position: relative
+    z-index: 2
+
+  &-btn
+    font-family: 'Raleway', sans-serif
+    padding: 14px 24px
+    font-weight: bold
+    text-transform: uppercase
+    color: $textColor
+    border-radius: 5px
+    border: none
+    background: #4ca3e6ef
+
+.header
+  position: relative
+  background: url(../img/header/bg.png) no-repeat
+  background-size: cover 
+  max-width: 100%
+  // z-index: -10
+
+  &-line
+    position: relative
+    background: $textColor
+    z-index: 2
+  
+  &-content
+    position: relative
+    font-family: 'Raleway', sans-serif
+    padding: 265px 0 210px 0
+    z-index: 2
+
+  &-title
+    font-family: 'Roboto Slab', serif
+    text-transform: uppercase
+    font-size: 40px
+    color: $textColor
+
+  &-desc
+    max-width: 500px
+    font-size: 26px
+    color: $textColor
+
+  &-btn
+    position: relative
+    margin-top: 50px
+    z-index: 2
+    
+    &-wrap
+      +phone
+        display: flex
+
+    &-store
+      display: flex
+      padding: 15px
+      border-radius: 8px
+      background: #fff
+      border: none
+
+      &-text
+        margin: 0
+        padding-left: 10px 
+        font-weight: bold
+        font-size: 20px
+        color: black
+
+    &-normal
+      padding: 15px 44px
+      border-radius: 8px
+      background: #4ca3e6ef
+      border: none
+      font-weight: bold
+      font-size: 20px
+      color: $textColor
+      +phone
+        margin: 50px 0 0 10px
+
+  &-phone
+    display: none
+    +laptop 
+      display: block
+      position: absolute
+      top: -738px
+      right: 0
+      width: 420px
+      z-index: 2
+
+    &-wrap
+      display: none
+      +laptop
+        display: block
+        position: relative
+    
+  &-display
+    display: none
+    +laptop
+      display: block
+      position: absolute
+      top: -637px
+      right: 31px
+      width: 358px
+      z-index: 2
+
+  &-pencil
+    position: absolute
+    top: 661px
+    left: 0
+    z-index: 1
+
+  &-earphone
+    position: absolute
+    top: 423px
+    right: 0
+    z-index: 1
+  
+  &-headphones
+    position: absolute
+    top: -30px
+    left: -400px
+    z-index: 1

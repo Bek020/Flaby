@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Bek020/Flaby/issues"
   },
-  "homepage": "https://github.com/Bek020/Flaby#readme"
+  "homepage": "https://github.com/Bek020/Flaby#readme",
+  "dependencies": {
+    "hamburgers": "^1.1.3"
+  }
 }
