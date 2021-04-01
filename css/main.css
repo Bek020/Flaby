@@ -1,6 +1,7 @@
 :root {
   --main-color: #2EB0EC;
   --btn-color: #53A0DB;
+  --btn-second-color: #66D4F4;
   --text-color: #ffffff;
   --title-color: #494949;
   --desc-color: #7C7C7C;
@@ -239,8 +240,88 @@ html, body {
   color: var(--title-color);
 }
 .service-content-desc {
+  margin: 0 auto;
+  max-width: 300px;
   font-size: 14px;
   color: var(--desc-color);
+}
+
+.possibi {
+  position: relative;
+  background: #FAFBFB;
+}
+.possibi-info {
+  font-family: "Raleway", sans-serif;
+  padding: 130px 0;
+  max-width: 605px;
+}
+@media screen and (min-width: 992px) {
+  .possibi-info {
+    float: right;
+    padding: 130px 80px 0 0;
+  }
+}
+.possibi-info-text {
+  font-size: 22px;
+  color: var(--desc-color);
+}
+.possibi-info-title {
+  font-size: 32px;
+  color: var(--title-color);
+  font-weight: bold;
+}
+.possibi-info-desc {
+  font-size: 20px;
+  color: var(--desc-color);
+  max-width: 510px;
+}
+.possibi-img {
+  width: 100%;
+}
+.possibi-img-wrap {
+  position: absolute;
+  left: 0;
+  top: 800px;
+  max-width: 650px;
+}
+@media screen and (min-width: 480px) {
+  .possibi-img-wrap {
+    top: 600px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .possibi-img-wrap {
+    max-width: 350px;
+    top: 150px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .possibi-img-wrap {
+    top: 100px;
+    max-width: 500px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  .possibi-img-wrap {
+    max-width: 700px;
+  }
+}
+.possibi-item {
+  color: #66D4F4;
+}
+.possibi-item-desc {
+  color: var(--desc-color);
+  font-size: 14px;
+}
+.possibi-btn {
+  padding: 15px 25px;
+  border: none;
+  border-radius: 40px;
+  font-weight: bold;
+  font-size: 14px;
+  color: var(--text-color);
+  background: var(--btn-second-color);
+  text-transform: uppercase;
 }
 
 /*!

@@ -1,0 +1,64 @@
+.possibi
+  position: relative
+  background: #FAFBFB
+
+  &-info
+    font-family: 'Raleway', sans-serif
+    padding: 130px 0
+    max-width: 605px
+    +laptop
+      float: right
+      padding: 130px 80px 0 0
+
+    &-text 
+      font-size: 22px
+      color: $descColor
+
+    &-title
+      font-size: 32px
+      color: $titleColor
+      font-weight: bold
+
+    &-desc
+      font-size: 20px
+      color: $descColor
+      max-width: 510px
+  
+  &-img
+    width: 100%
+
+    &-wrap
+      position: absolute
+      left: 0 
+      top: 800px
+      max-width: 650px
+      +phone
+        top: 600px
+
+      +laptop
+        max-width: 350px
+        top: 150px
+
+      +desktop
+        top: 100px
+        max-width: 500px
+
+      +wideScreen
+        max-width: 700px
+
+  &-item
+    color: #66D4F4
+
+    &-desc
+      color: $descColor
+      font-size: 14px
+
+  &-btn 
+    padding: 15px 25px
+    border: none
+    border-radius: 40px
+    font-weight: bold
+    font-size: 14px
+    color: $textColor
+    background: $btnSecondColor
+    text-transform: uppercase
